@@ -34,7 +34,7 @@ async function createAffiliateLink(advertiserId, link = '') {
       {
         headers: {
           'Content-Type': 'application/json',
-          Authorization: 'Bearer 26dcfb53-96c4-4337-9b9b-db10d7bd2d29',
+          Authorization: 'Bearer ' + process.env.AWIN_TOKEN,
         },
       }
     );
